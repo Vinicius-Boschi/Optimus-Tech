@@ -5,63 +5,10 @@ $dark-red: #8E2424;
 $dark-gray: #3A404E;
 $black: #101828;
 
+@import 'navbar', 'footer';
+
 body {
     font-family: 'Inter', sans-serif;
-}
-
-.navbar {
-
-    &__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 1rem;
-    }
-
-    &__name {
-        color: $dark-gray;
-        font-size: 1.1rem;
-        display: flex;
-        align-items: center;
-    }
-
-    &__img {
-        margin-right: .5rem;
-    }
-
-    &__links {
-        display: inline;
-        padding: 1rem;
-    }
-
-    &__link {
-        text-decoration: none;
-        color: $gray;
-    }
-
-    &__enter {
-        color: $gray;
-        background: none;
-        border: none;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    &__register {
-        background-color: $dark-red;
-        color: #ffff;
-        border: 2px solid $black;
-        border-radius: .5rem;
-        width: 5rem;
-        height: 2rem;
-        cursor: pointer;
-        
-        &:hover {
-            transition: 1s;
-            box-shadow: 3px 3px 8px 1px $dark-gray;
-        }
-    }
 }
 
 .main {
@@ -70,7 +17,7 @@ body {
     
     &__subheading {
         color: $dark-red;
-        font-size: 13px;
+        font-size: .8rem;
         font-weight: bold;
         padding: 1rem;
     }
@@ -78,13 +25,15 @@ body {
     &__heading {
         font-size: 2rem;
         padding: 2rem;
+        font-weight: bold;
     }
 
     &__details {
         display: inline-block;
         text-align: center;
-        width: 45%;
+        width: 42%;
         line-height: 1.3rem;
+        font-size: .9rem;
     }
 
     &__container {
@@ -116,5 +65,93 @@ body {
         font-size: .9rem;
         width: 70%;
         line-height: 1.3rem;
+    }
+
+    &__talents {
+        margin-top: 10rem;
+    }
+
+    &__talents_text {
+        display: inline-block;
+        color: $dark-red;  
+        background-color: #8e242419;
+        font-size: .7rem;
+        border-radius: 1rem;
+        width: 6rem;
+        height: 1rem;
+        padding: 6px 2px 6px 2px;
+    }
+
+    &__talents_title {
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    &__talents_sub {
+        font-size: .9rem;
+    }
+
+    &__talents_img {
+        padding-top: 2rem;
+        width: 75%;
+    }
+
+    &__vacancy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__vacancy_title {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    &__vacancy_information {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        border: 1px solid #EAECF0;
+        border-radius: .3rem;
+        width: 50%;
+        height: 6rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    &__vacancy_job {
+        font-size: 1.2rem;
+    }
+
+    &__vacancy_time, &__vacancy_money {
+        display: contents;
+        font-size: .8rem;
+    }
+
+    &__testimony_container {
+        background-color: #8e242419;
+        border-radius: 2rem;
+    }
+
+    &__testimony_text {
+        color: $dark-red;
+        font-size: .8rem;
+        font-weight: bold;
+        padding: 3rem;
+    }
+
+    &__testimony_title {
+        display: inline-block;
+        font-size: 1.5rem;
+        padding: 1rem;
+        width: 55%;
+        text-align: center;
+    }
+
+    &__testimony_name, &__testimony_work {
+        font-size: .8rem;
+        padding: 1rem;
     }
 }

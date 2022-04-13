@@ -1,0 +1,42 @@
+
+.footer {
+
+    &__container {
+        background-color: #F9FAFB; 
+        text-align: center; 
+        padding: 3rem;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &__text {
+        font-size: .9rem;
+        padding: 1.5rem;
+    }
+
+    &__email {
+        border-radius: .3rem;
+        width: 15rem;
+        height: 2rem;
+        border: 1px solid #D0D5DD;
+        padding: .3rem;
+    }
+
+    &__register {
+        background-color: $dark-red;
+        color: #ffff;
+        border-radius: .5rem;
+        width: 5rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+
+    &__copyright {
+        color: #98A2B3;
+        font-size: .8rem;
+        padding: 1rem;
+    }
+}

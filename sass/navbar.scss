@@ -1,0 +1,48 @@
+.navbar {
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    &__name {
+        color: $dark-gray;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        margin-right: .5rem;
+    }
+
+    &__links {
+        display: inline;
+        padding: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $gray;
+    }
+
+    &__enter {
+        color: $gray;
+        background: none;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    &__register {
+        background-color: $dark-red;
+        color: #ffff;
+        border-radius: .5rem;
+        width: 5rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+}

@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-body {
-  font-family: "Inter", sans-serif;
-}
-
 .navbar__container {
   display: flex;
   flex-direction: row;
@@ -37,15 +33,48 @@ body {
 .navbar__register {
   background-color: #8E2424;
   color: #ffff;
-  border: 2px solid #101828;
   border-radius: 0.5rem;
   width: 5rem;
   height: 2rem;
   cursor: pointer;
 }
-.navbar__register:hover {
-  transition: 1s;
-  box-shadow: 3px 3px 8px 1px #3A404E;
+
+.footer__container {
+  background-color: #F9FAFB;
+  text-align: center;
+  padding: 3rem;
+}
+.footer__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.footer__text {
+  font-size: 0.9rem;
+  padding: 1.5rem;
+}
+.footer__email {
+  border-radius: 0.3rem;
+  width: 15rem;
+  height: 2rem;
+  border: 1px solid #D0D5DD;
+  padding: 0.3rem;
+}
+.footer__register {
+  background-color: #8E2424;
+  color: #ffff;
+  border-radius: 0.5rem;
+  width: 5rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.footer__copyright {
+  color: #98A2B3;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+
+body {
+  font-family: "Inter", sans-serif;
 }
 
 .main {
@@ -54,19 +83,21 @@ body {
 }
 .main__subheading {
   color: #8E2424;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: bold;
   padding: 1rem;
 }
 .main__heading {
   font-size: 2rem;
   padding: 2rem;
+  font-weight: bold;
 }
 .main__details {
   display: inline-block;
   text-align: center;
-  width: 45%;
+  width: 42%;
   line-height: 1.3rem;
+  font-size: 0.9rem;
 }
 .main__container {
   display: grid;
@@ -93,6 +124,80 @@ body {
   font-size: 0.9rem;
   width: 70%;
   line-height: 1.3rem;
+}
+.main__talents {
+  margin-top: 10rem;
+}
+.main__talents_text {
+  display: inline-block;
+  color: #8E2424;
+  background-color: #8e242419;
+  font-size: 0.7rem;
+  border-radius: 1rem;
+  width: 6rem;
+  height: 1rem;
+  padding: 6px 2px 6px 2px;
+}
+.main__talents_title {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.main__talents_sub {
+  font-size: 0.9rem;
+}
+.main__talents_img {
+  padding-top: 2rem;
+  width: 75%;
+}
+.main__vacancy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__vacancy_title {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.main__vacancy_information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  border: 1px solid #EAECF0;
+  border-radius: 0.3rem;
+  width: 50%;
+  height: 6rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.main__vacancy_job {
+  font-size: 1.2rem;
+}
+.main__vacancy_time, .main__vacancy_money {
+  display: contents;
+  font-size: 0.8rem;
+}
+.main__testimony_container {
+  background-color: #8e242419;
+  border-radius: 2rem;
+}
+.main__testimony_text {
+  color: #8E2424;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 3rem;
+}
+.main__testimony_title {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 55%;
+  text-align: center;
+}
+.main__testimony_name, .main__testimony_work {
+  font-size: 0.8rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
