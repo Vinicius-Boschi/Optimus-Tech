@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.navbar__name {
+  color: #3A404E;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+.navbar__img {
+  margin-right: 0.5rem;
+}
+.navbar__links {
+  display: inline;
+  padding: 1rem;
+}
+.navbar__link {
+  text-decoration: none;
+  color: #667085;
+}
+.navbar__enter {
+  color: #667085;
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navbar__register {
+  background-color: #8E2424;
+  color: #ffff;
+  border: 2px solid #101828;
+  border-radius: 0.5rem;
+  width: 5rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.navbar__register:hover {
+  transition: 1s;
+  box-shadow: 3px 3px 8px 1px #3A404E;
+}
+
+.main {
+  text-align: center;
+  padding: 4rem;
+}
+.main__subheading {
+  color: #8E2424;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 1rem;
+}
+.main__heading {
+  font-size: 2rem;
+  padding: 2rem;
+}
+.main__details {
+  display: inline-block;
+  text-align: center;
+  width: 45%;
+  line-height: 1.3rem;
+}
+.main__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 5rem;
+}
+.main__metric {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.main__metric_item {
+  color: #8E2424;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.main__metric_title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  line-height: 2rem;
+}
+.main__metric_text {
+  font-size: 0.9rem;
+  width: 70%;
+  line-height: 1.3rem;
+}
+
+/*# sourceMappingURL=style.css.map */

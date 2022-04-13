@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+$gray: #667085;
+$dark-red: #8E2424;
+$dark-gray: #3A404E;
+$black: #101828;
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    &__name {
+        color: $dark-gray;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        margin-right: .5rem;
+    }
+
+    &__links {
+        display: inline;
+        padding: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $gray;
+    }
+
+    &__enter {
+        color: $gray;
+        background: none;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    &__register {
+        background-color: $dark-red;
+        color: #ffff;
+        border: 2px solid $black;
+        border-radius: .5rem;
+        width: 5rem;
+        height: 2rem;
+        cursor: pointer;
+        
+        &:hover {
+            transition: 1s;
+            box-shadow: 3px 3px 8px 1px $dark-gray;
+        }
+    }
+}
+
+.main {
+    text-align: center;
+    padding: 4rem;
+    
+    &__subheading {
+        color: $dark-red;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 1rem;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    &__details {
+        display: inline-block;
+        text-align: center;
+        width: 45%;
+        line-height: 1.3rem;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 5rem;
+    }
+
+    &__metric {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    &__metric_item {
+        color: $dark-red;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+    &__metric_title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-top: 1rem;
+        line-height: 2rem;
+    }
+
+    &__metric_text {
+        font-size: .9rem;
+        width: 70%;
+        line-height: 1.3rem;
+    }
+}
