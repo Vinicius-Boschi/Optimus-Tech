@@ -1,11 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); // A fonte usada no site.
 
-$gray: #667085;
+$gray: #667085; // As cores que são usadas no site.
 $dark-red: #8E2424;
 $dark-gray: #3A404E;
 $black: #101828;
 
-@import 'navbar', 'footer';
+@mixin div-flex { // Função que estiliza o html sem precisar repetir as propriedades, evitando a repetição do código.
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin display {
+    display: inline-block;
+    text-align: center;
+}
+
+@function calculateRem($size) { // Função que vai calcular a quantidade de rem.
+    @return $size / 1rem * 16px;    
+}
+
+@mixin padding($size) { // Aqui o padding vai usar a quantidade de rem que for definida nele.
+    padding: calculateRem($size);
+}
+
+@mixin phone {
+    @media (max-width: 767.98px) { @content; }
+}
+
+@import 'navbar', 'footer'; // Ele importa os outros arquivos sass da página.
 
 body {
     font-family: 'Inter', sans-serif;
@@ -18,19 +40,18 @@ body {
     &__subheading {
         color: $dark-red;
         font-size: .8rem;
-        font-weight: bold;
-        padding: 1rem;
+        font-weight: bold;  
+        @include padding(1.2rem);
     }
 
     &__heading {
         font-size: 2rem;
-        padding: 2rem;
+        @include padding(2rem);
         font-weight: bold;
     }
 
     &__details {
-        display: inline-block;
-        text-align: center;
+        @include display;
         width: 42%;
         line-height: 1.3rem;
         font-size: .9rem;
@@ -39,12 +60,11 @@ body {
     &__container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        padding-top: 5rem;
+        @include padding(5rem);
     }
 
     &__metric {
-        display: flex;
-        flex-direction: column;
+        @include div-flex;
         text-align: left;
     }
 
@@ -68,18 +88,18 @@ body {
     }
 
     &__talents {
-        margin-top: 10rem;
+        margin-top: 4rem;
     }
 
     &__talents_text {
-        display: inline-block;
+        @include display;
         color: $dark-red;  
         background-color: #8e242419;
         font-size: .7rem;
         border-radius: 1rem;
         width: 6rem;
         height: 1rem;
-        padding: 6px 2px 6px 2px;
+        @include padding(.4rem);
     }
 
     &__talents_title {
@@ -93,31 +113,29 @@ body {
     }
 
     &__talents_img {
-        padding-top: 2rem;
+        @include padding(2rem);
         width: 75%;
     }
 
     &__vacancy {
-        display: flex;
-        flex-direction: column;
+        @include div-flex;
         align-items: center;
     }
 
     &__vacancy_title {
         font-size: 1.2rem;
-        padding: 1rem;
+        @include padding(1rem);
     }
 
     &__vacancy_information {
-        display: flex;
-        flex-direction: column;
+        @include div-flex;
         align-items: flex-start;
         justify-content: space-around;
         border: 1px solid #EAECF0;
         border-radius: .3rem;
         width: 50%;
         height: 6rem;
-        padding: 1rem;
+        @include padding(1rem);
         margin: 1rem;
     }
 
@@ -139,19 +157,18 @@ body {
         color: $dark-red;
         font-size: .8rem;
         font-weight: bold;
-        padding: 3rem;
+        @include padding(3rem);
     }
 
     &__testimony_title {
-        display: inline-block;
+        @include display;
         font-size: 1.5rem;
-        padding: 1rem;
+        @include padding(1rem);
         width: 55%;
-        text-align: center;
     }
 
     &__testimony_name, &__testimony_work {
         font-size: .8rem;
-        padding: 1rem;
+        @include padding(1rem);
     }
 }

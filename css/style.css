@@ -15,6 +15,21 @@
 .navbar__img {
   margin-right: 0.5rem;
 }
+@media (max-width: 767.98px) {
+  .navbar__list {
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+    margin-top: 0;
+    transform: translate3d(0, -50px, 0);
+    transition: 0.3s;
+  }
+}
+.navbar__list.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
 .navbar__links {
   display: inline;
   padding: 1rem;
@@ -22,6 +37,21 @@
 .navbar__link {
   text-decoration: none;
   color: #667085;
+}
+@media (max-width: 767.98px) {
+  .navbar__buttons {
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+    margin-top: 0;
+    transform: translate3d(0, -50px, 0);
+    transition: 0.3s;
+  }
+}
+.navbar__buttons.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 .navbar__enter {
   color: #667085;
@@ -37,6 +67,40 @@
   width: 5rem;
   height: 2rem;
   cursor: pointer;
+}
+@media (max-width: 767.98px) {
+  .navbar__button {
+    margin: auto;
+    display: block;
+    color: #000;
+    height: 36px;
+    width: 36px;
+    border-top: 4px solid;
+    position: relative;
+    cursor: pointer;
+  }
+  .navbar__button::after, .navbar__button::before {
+    content: "";
+    display: block;
+    height: 4px;
+    margin-top: 6px;
+    background: currentColor;
+    position: relative;
+    transition: 0.3s ease;
+  }
+  .navbar__button.active {
+    border-top-color: transparent;
+  }
+  .navbar__button.active::after {
+    margin-top: 0px;
+    top: 2px;
+    transform: rotate(45deg);
+  }
+  .navbar__button.active::before {
+    margin-top: 0px;
+    top: 6px;
+    transform: rotate(135deg);
+  }
 }
 
 .footer__container {
@@ -85,11 +149,11 @@ body {
   color: #8E2424;
   font-size: 0.8rem;
   font-weight: bold;
-  padding: 1rem;
+  padding: 19.2px;
 }
 .main__heading {
   font-size: 2rem;
-  padding: 2rem;
+  padding: 32px;
   font-weight: bold;
 }
 .main__details {
@@ -102,7 +166,7 @@ body {
 .main__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding-top: 5rem;
+  padding: 80px;
 }
 .main__metric {
   display: flex;
@@ -126,17 +190,18 @@ body {
   line-height: 1.3rem;
 }
 .main__talents {
-  margin-top: 10rem;
+  margin-top: 4rem;
 }
 .main__talents_text {
   display: inline-block;
+  text-align: center;
   color: #8E2424;
   background-color: #8e242419;
   font-size: 0.7rem;
   border-radius: 1rem;
   width: 6rem;
   height: 1rem;
-  padding: 6px 2px 6px 2px;
+  padding: 6.4px;
 }
 .main__talents_title {
   padding: 1rem;
@@ -147,7 +212,7 @@ body {
   font-size: 0.9rem;
 }
 .main__talents_img {
-  padding-top: 2rem;
+  padding: 32px;
   width: 75%;
 }
 .main__vacancy {
@@ -157,7 +222,7 @@ body {
 }
 .main__vacancy_title {
   font-size: 1.2rem;
-  padding: 1rem;
+  padding: 16px;
 }
 .main__vacancy_information {
   display: flex;
@@ -168,7 +233,7 @@ body {
   border-radius: 0.3rem;
   width: 50%;
   height: 6rem;
-  padding: 1rem;
+  padding: 16px;
   margin: 1rem;
 }
 .main__vacancy_job {
@@ -186,18 +251,18 @@ body {
   color: #8E2424;
   font-size: 0.8rem;
   font-weight: bold;
-  padding: 3rem;
+  padding: 48px;
 }
 .main__testimony_title {
   display: inline-block;
-  font-size: 1.5rem;
-  padding: 1rem;
-  width: 55%;
   text-align: center;
+  font-size: 1.5rem;
+  padding: 16px;
+  width: 55%;
 }
 .main__testimony_name, .main__testimony_work {
   font-size: 0.8rem;
-  padding: 1rem;
+  padding: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

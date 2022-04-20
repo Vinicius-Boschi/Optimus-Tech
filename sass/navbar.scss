@@ -19,6 +19,23 @@
         margin-right: .5rem;
     }
 
+    &__list {
+        @include phone {
+            opacity: 0;
+            visibility: hidden;
+            text-align: left;
+            margin-top: 0;
+            transform: translate3d(0, -50px, 0);
+            transition: .3s;
+        }
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+            transform: translate3d(0, 0, 0)
+        }
+    }
+
     &__links {
         display: inline;
         padding: 1rem;
@@ -27,6 +44,23 @@
     &__link {
         text-decoration: none;
         color: $gray;
+    }
+
+    &__buttons {
+        @include phone {
+            opacity: 0;
+            visibility: hidden;
+            text-align: left;
+            margin-top: 0;
+            transform: translate3d(0, -50px, 0);
+            transition: .3s;
+        }
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+            transform: translate3d(0, 0, 0)
+        }
     }
 
     &__enter {
@@ -44,5 +78,44 @@
         width: 5rem;
         height: 2rem;
         cursor: pointer;
+    }
+
+    &__button {
+        @include phone {
+            margin: auto;
+            display: block;
+            color: #000;
+            height: 36px;
+            width: 36px;
+            border-top: 4px solid;
+            position: relative;
+            cursor: pointer;
+
+            &::after, &::before {
+                content: "";
+                display: block;
+                height: 4px;
+                margin-top: 6px;
+                background: currentColor;
+                position: relative;
+                transition: .3s ease;
+            }
+
+            &.active {
+                border-top-color: transparent;
+            }
+
+            &.active::after {
+                margin-top: 0px;
+                top: 2px;
+                transform: rotate(45deg);
+            }
+
+            &.active::before {
+                margin-top: 0px;
+                top: 6px;
+                transform: rotate(135deg);
+            }
+        }
     }
 }
