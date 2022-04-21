@@ -24,7 +24,7 @@ $black: #101828;
 }
 
 @mixin phone {
-    @media (min-width: 400px) and (max-width: 540.98px) { @content; }
+    @media (min-width: 375px) and (max-width: 540.98px) { @content; }
 }
 
 @mixin tablet {
