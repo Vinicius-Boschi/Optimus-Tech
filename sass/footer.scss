@@ -32,6 +32,10 @@
         width: 5rem;
         height: 2rem;
         cursor: pointer;
+
+        @include phone {
+            margin-top: 1rem;
+        }
     }
 
     &__copyright {

@@ -6,6 +6,10 @@
         justify-content: space-around;
         align-items: center;
         padding: 1rem;
+
+        @include phone {
+            display: initial;
+        }
     }
 
     &__name {
@@ -21,9 +25,10 @@
 
     &__list {
         @include phone {
+            @include div-flex;
+            text-align: center;    
             opacity: 0;
             visibility: hidden;
-            text-align: left;
             margin-top: 0;
             transform: translate3d(0, -50px, 0);
             transition: .3s;
@@ -46,8 +51,11 @@
         color: $gray;
     }
 
-    &__buttons {
+    &__buttons {        
         @include phone {
+            @include div-flex;
+            @include padding(1rem);
+            align-items: center;
             opacity: 0;
             visibility: hidden;
             text-align: left;

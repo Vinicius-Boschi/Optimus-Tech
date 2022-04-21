@@ -24,7 +24,11 @@ $black: #101828;
 }
 
 @mixin phone {
-    @media (max-width: 767.98px) { @content; }
+    @media (min-width: 400px) and (max-width: 540.98px) { @content; }
+}
+
+@mixin tablet {
+    @media (min-width: 541px) and (max-width: 999px) { @content; }
 }
 
 @import 'navbar', 'footer'; // Ele importa os outros arquivos sass da página.
@@ -55,17 +59,34 @@ body {
         width: 42%;
         line-height: 1.3rem;
         font-size: .9rem;
+
+        @include phone {
+            width: auto;
+        }
     }
 
     &__container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         @include padding(5rem);
+
+        @include phone {
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+        }
     }
 
     &__metric {
         @include div-flex;
         text-align: left;
+
+        @include phone {
+            @include div-flex;
+            align-items: center;
+            text-align: center;
+            flex-wrap: wrap;
+            padding-top:1rem;
+        }
     }
 
     &__metric_item {
@@ -85,6 +106,10 @@ body {
         font-size: .9rem;
         width: 70%;
         line-height: 1.3rem;
+
+        @include phone {
+            width: 9rem;
+        }
     }
 
     &__talents {
@@ -137,6 +162,10 @@ body {
         height: 6rem;
         @include padding(1rem);
         margin: 1rem;
+
+        @include phone {
+            width: 73%;
+        }
     }
 
     &__vacancy_job {
@@ -146,6 +175,10 @@ body {
     &__vacancy_time, &__vacancy_money {
         display: contents;
         font-size: .8rem;
+
+        @include phone {
+            display: initial;
+        }
     }
 
     &__testimony_container {
@@ -162,9 +195,20 @@ body {
 
     &__testimony_title {
         @include display;
-        font-size: 1.5rem;
         @include padding(1rem);
+        font-size: 1.5rem;
         width: 55%;
+
+        @include phone {
+            width: 80%;
+            font-size: 1.1rem;
+        }
+    }
+
+    &__testimony_picture {
+        @include phone {
+            width: 16%;
+        }
     }
 
     &__testimony_name, &__testimony_work {

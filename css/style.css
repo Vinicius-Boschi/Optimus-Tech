@@ -6,6 +6,11 @@
   align-items: center;
   padding: 1rem;
 }
+@media (min-width: 400px) and (max-width: 540.98px) {
+  .navbar__container {
+    display: initial;
+  }
+}
 .navbar__name {
   color: #3A404E;
   font-size: 1.1rem;
@@ -15,11 +20,13 @@
 .navbar__img {
   margin-right: 0.5rem;
 }
-@media (max-width: 767.98px) {
+@media (min-width: 400px) and (max-width: 540.98px) {
   .navbar__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     opacity: 0;
     visibility: hidden;
-    text-align: left;
     margin-top: 0;
     transform: translate3d(0, -50px, 0);
     transition: 0.3s;
@@ -38,8 +45,12 @@
   text-decoration: none;
   color: #667085;
 }
-@media (max-width: 767.98px) {
+@media (min-width: 400px) and (max-width: 540.98px) {
   .navbar__buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    align-items: center;
     opacity: 0;
     visibility: hidden;
     text-align: left;
@@ -68,7 +79,7 @@
   height: 2rem;
   cursor: pointer;
 }
-@media (max-width: 767.98px) {
+@media (min-width: 400px) and (max-width: 540.98px) {
   .navbar__button {
     margin: auto;
     display: block;
@@ -131,6 +142,11 @@
   height: 2rem;
   cursor: pointer;
 }
+@media (min-width: 400px) and (max-width: 540.98px) {
+  .footer__register {
+    margin-top: 1rem;
+  }
+}
 .footer__copyright {
   color: #98A2B3;
   font-size: 0.8rem;
@@ -163,15 +179,36 @@ body {
   line-height: 1.3rem;
   font-size: 0.9rem;
 }
+@media (min-width: 400px) and (max-width: 540.98px) {
+  .main__details {
+    width: auto;
+  }
+}
 .main__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 80px;
 }
+@media (min-width: 400px) and (max-width: 540.98px) {
+  .main__container {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+}
 .main__metric {
   display: flex;
   flex-direction: column;
   text-align: left;
+}
+@media (min-width: 400px) and (max-width: 540.98px) {
+  .main__metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+  }
 }
 .main__metric_item {
   color: #8E2424;
@@ -188,6 +225,11 @@ body {
   font-size: 0.9rem;
   width: 70%;
   line-height: 1.3rem;
+}
+@media (min-width: 400px) and (max-width: 540.98px) {
+  .main__metric_text {
+    width: 9rem;
+  }
 }
 .main__talents {
   margin-top: 4rem;
@@ -236,12 +278,22 @@ body {
   padding: 16px;
   margin: 1rem;
 }
+@media (min-width: 400px) and (max-width: 540.98px) {
+  .main__vacancy_information {
+    width: 73%;
+  }
+}
 .main__vacancy_job {
   font-size: 1.2rem;
 }
 .main__vacancy_time, .main__vacancy_money {
   display: contents;
   font-size: 0.8rem;
+}
+@media (min-width: 400px) and (max-width: 540.98px) {
+  .main__vacancy_time, .main__vacancy_money {
+    display: initial;
+  }
 }
 .main__testimony_container {
   background-color: #8e242419;
@@ -256,9 +308,20 @@ body {
 .main__testimony_title {
   display: inline-block;
   text-align: center;
-  font-size: 1.5rem;
   padding: 16px;
+  font-size: 1.5rem;
   width: 55%;
+}
+@media (min-width: 400px) and (max-width: 540.98px) {
+  .main__testimony_title {
+    width: 80%;
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 540.98px) {
+  .main__testimony_picture {
+    width: 16%;
+  }
 }
 .main__testimony_name, .main__testimony_work {
   font-size: 0.8rem;
