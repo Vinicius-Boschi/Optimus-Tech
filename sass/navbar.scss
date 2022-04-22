@@ -122,15 +122,19 @@
     &__enter {
         color: $gray;
         background: none;
-        border: none;
+        border: 1px solid $gray;
+        border-radius: .3rem;
         font-weight: bold;
+        margin: .5rem;
+        width: 5rem;
+        height: 2rem;
         cursor: pointer;
     }
 
     &__register {
         background-color: $dark-red;
         color: #ffff;
-        border-radius: .5rem;
+        border-radius: .3rem;
         width: 5rem;
         height: 2rem;
         cursor: pointer;

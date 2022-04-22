@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 .navbar {
   height: 10rem;
 }
@@ -113,14 +113,18 @@
 .navbar__enter {
   color: #667085;
   background: none;
-  border: none;
+  border: 1px solid #667085;
+  border-radius: 0.3rem;
   font-weight: bold;
+  margin: 0.5rem;
+  width: 5rem;
+  height: 2rem;
   cursor: pointer;
 }
 .navbar__register {
   background-color: #8E2424;
   color: #ffff;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   width: 5rem;
   height: 2rem;
   cursor: pointer;
@@ -166,7 +170,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 @media (min-width: 375px) and (max-width: 694.98px) {
   body {

@@ -1,7 +1,7 @@
 @import 'funcoes', 'navbar', 'footer'; // Ele importa os outros arquivos sass da página.
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Slab', serif;
     
     @include phone {
         background: #00000091;
