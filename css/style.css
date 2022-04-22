@@ -9,7 +9,7 @@
   align-items: center;
   padding: 1rem;
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .navbar__container {
     display: initial;
   }
@@ -30,7 +30,7 @@
 .navbar__button {
   display: block;
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .navbar__button {
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@
     transform: rotate(135deg);
   }
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .navbar__list {
     display: flex;
     flex-direction: column;
@@ -92,7 +92,7 @@
   text-decoration: none;
   color: #667085;
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .navbar__buttons {
     display: flex;
     flex-direction: column;
@@ -154,7 +154,7 @@
   height: 2rem;
   cursor: pointer;
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .footer__register {
     margin-top: 1rem;
   }
@@ -168,7 +168,7 @@
 body {
   font-family: "Inter", sans-serif;
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   body {
     background: #00000091;
   }
@@ -199,7 +199,7 @@ body {
   line-height: 1.3rem;
   font-size: 0.9rem;
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .main__details {
     width: auto;
   }
@@ -209,10 +209,16 @@ body {
   grid-template-columns: repeat(4, 1fr);
   padding: 80px;
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .main__container {
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
+  }
+}
+@media (min-width: 695px) and (max-width: 999px) {
+  .main__container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 3rem;
   }
 }
 .main__metric {
@@ -220,7 +226,7 @@ body {
   flex-direction: column;
   text-align: left;
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .main__metric {
     display: flex;
     flex-direction: column;
@@ -228,6 +234,11 @@ body {
     text-align: center;
     flex-wrap: wrap;
     padding-top: 1rem;
+  }
+}
+@media (min-width: 695px) and (max-width: 999px) {
+  .main__metric {
+    padding: 16px;
   }
 }
 .main__metric_item {
@@ -246,7 +257,7 @@ body {
   width: 70%;
   line-height: 1.3rem;
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .main__metric_text {
     width: auto;
   }
@@ -298,7 +309,7 @@ body {
   padding: 16px;
   margin: 1rem;
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .main__vacancy_information {
     width: 73%;
   }
@@ -310,7 +321,7 @@ body {
   display: contents;
   font-size: 0.8rem;
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .main__vacancy_time, .main__vacancy_money {
     display: initial;
   }
@@ -332,13 +343,13 @@ body {
   font-size: 1.5rem;
   width: 55%;
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .main__testimony_title {
     width: 80%;
     font-size: 1.1rem;
   }
 }
-@media (min-width: 375px) and (max-width: 540.98px) {
+@media (min-width: 375px) and (max-width: 694.98px) {
   .main__testimony_picture {
     width: 16%;
   }
