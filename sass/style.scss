@@ -1,45 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); // A fonte usada no site.
-
-$gray: #667085; // As cores que são usadas no site.
-$dark-red: #8E2424;
-$dark-gray: #3A404E;
-$black: #101828;
-
-@mixin div-flex { // Função que estiliza o html sem precisar repetir as propriedades, evitando a repetição do código.
-    display: flex;
-    flex-direction: column;
-}
-
-@mixin display {
-    display: inline-block;
-    text-align: center;
-}
-
-@function calculateRem($size) { // Função que vai calcular a quantidade de rem.
-    @return $size / 1rem * 16px;    
-}
-
-@mixin padding($size) { // Aqui o padding vai usar a quantidade de rem que for definida nele.
-    padding: calculateRem($size);
-}
-
-@mixin phone {
-    @media (min-width: 375px) and (max-width: 540.98px) { @content; }
-}
-
-@mixin tablet {
-    @media (min-width: 541px) and (max-width: 999px) { @content; }
-}
-
-@import 'navbar', 'footer'; // Ele importa os outros arquivos sass da página.
+@import 'funcoes', 'navbar', 'footer'; // Ele importa os outros arquivos sass da página.
 
 body {
     font-family: 'Inter', sans-serif;
+    
+    @include phone {
+        background: #00000091;
+        &.active {
+            background: white;
+        }
+    }
 }
 
 .main {
     text-align: center;
-    padding: 4rem;
+    padding: 2rem;
     
     &__subheading {
         color: $dark-red;
@@ -108,12 +82,12 @@ body {
         line-height: 1.3rem;
 
         @include phone {
-            width: 9rem;
+            width: auto;
         }
     }
 
     &__talents {
-        margin-top: 4rem;
+        margin-top: 5.4rem;
     }
 
     &__talents_text {
